@@ -78,7 +78,7 @@ html(lang="en")
 							div(class="input-group input-group-sm")
 								input(type="text", class="form-control form-control-sm", name="query", placeholder="block height/hash, txid, address", value=(query))
 								div(class="input-group-append")
-									button(type="submit", class="btn btn-primary")
+									button(type="submit", class="btn btn-danger")
 										i(class="fas fa-search")
 
 						ul(class="navbar-nav")
@@ -139,7 +139,7 @@ html(lang="en")
 				if (config.demoSite && !crawlerBot)
 					include ./includes/donation-modal.pug
 
-		footer(class="footer border-top border-primary bg-dark pt-3 pb-1 px-3 text-white", style="border-width: 5px !important;")
+		footer(class="footer border-top border-danger bg-dark pt-3 pb-1 px-3 text-white", style="border-width: 5px !important;")
 			div(class="container")
 				div(class="row")
 					div(class="col-md-5")
@@ -150,12 +150,12 @@ html(lang="en")
 								
 								if (global.sourcecodeProjectMetadata)
 									div(class="mt-2")
-										a(href="https://github.com/janoside/btc-rpc-explorer", class="btn btn-primary btn-sm mr-3 mb-1 text-decoration-none")
+										a(href="https://github.com/janoside/btc-rpc-explorer", class="btn btn-danger btn-sm mr-3 mb-1 text-decoration-none")
 											i(class="fas fa-star mr-2")
 											span(class="mr-2") Star 
 											span(class="badge bg-white text-dark") #{global.sourcecodeProjectMetadata.stargazers_count}
 
-										a(href="https://github.com/janoside/btc-rpc-explorer/fork", class="btn btn-primary btn-sm mr-3 mb-1 text-decoration-none")
+										a(href="https://github.com/janoside/btc-rpc-explorer/fork", class="btn btn-danger btn-sm mr-3 mb-1 text-decoration-none")
 											i(class="fas fa-code-branch mr-2")
 											span(class="mr-2") Fork 
 											span(class="badge bg-white text-dark") #{global.sourcecodeProjectMetadata.forks_count}
@@ -196,7 +196,7 @@ html(lang="en")
 					div(class="col-md-7 text-md-right")
 						dl
 							dd
-								button.btn.btn-primary(type="button", class="btn btn-primary", data-toggle="modal", data-target="#exampleModalCenter")
+								button.btn.btn-danger(type="button", class="btn btn-danger", data-toggle="modal", data-target="#exampleModalCenter")
 									i(class="fas fa-heart mr-2")
 									span Support Project
 		
