@@ -41,7 +41,7 @@ block content
 		div(class="tab-content")
 			div(id="tab-details", class="tab-pane active", role="tabpanel")
 				if (global.specialTransactions && global.specialTransactions[txid])
-					div(class="alert alert-primary shadow-sm", style="padding-bottom: 0;")
+					div(class="alert alert-danger shadow-sm", style="padding-bottom: 0;")
 						div(class="float-left", style="width: 55px; height: 55px; font-size: 18px;")
 							i(class="fas fa-certificate fa-2x", style="margin-top: 10px;")
 
@@ -319,7 +319,7 @@ block content
 
 											else if (vin.coinbase)
 												div(class="monospace", style="line-height: 1.75em;")
-													span(class="rounded bg-primary text-white px-2 py-1 mr-2") coinbase
+													span(class="rounded bg-danger text-white px-2 py-1 mr-2") coinbase
 													br
 													span #{vin.coinbase}
 													br
